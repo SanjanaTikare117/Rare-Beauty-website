@@ -1,0 +1,5 @@
+#mod_rewrite starts here
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.rare beauty -f
+RewriteRule ^(.*)$ $1.rare beauty [NC,L]
